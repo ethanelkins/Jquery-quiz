@@ -22,6 +22,14 @@
   <script>
       $('.wrong-msg').hide();
       $('.correct-msg').hide();
+      $('.btn-right').on('click', function (){
+        $('.correct-msg').slideDown();
+        $('.wrong-msg').hide();
+      });
+      $('.btn-wrong').on('click', function (){
+        $('.wrong-msg').slideDown();
+        $('.correct-msg').hide();
+      });
   </script>
 </body>
 </html>
